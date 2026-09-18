@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        :root
+        {
+            --color:#fe5903;
+        }
+        .text-mycolor
+        {
+            color:var(--color) !important;
+        }
+        .bg-mycolor
+        {
+            background:var(--color) !important;
+        }
+        .h
+        {
+            height:45px !important;
+        }
+        #menu
+        {
+            background:rgb(46, 45, 45) !important;
+        }
+        #menu ul li a
+        {
+            color:white !important;
+        }
+        #menu ul li a:hover
+        {
+            color:var(--color) !important;
+            transition: all .5s;
+        }
+        .navbar ul li{
+            list-style-type:none;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row top1 text-center py-2 bg-light">
+        <div class="col-sm-4">
+            <i class="fa-solid fa-location-dot"></i>
+           <b> Deliver to : </b> Lucknow, India
+        </div>
+        <div class="col-sm-4">
+            Free Shiping on order above
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            999/-
+        </div>
+        <div class="col-sm-4">
+            <i class="fa-solid fa-phone"></i> <b>Need Help? </b>
+            +91-2424274244
+            <i class="fa-brands fa-facebook ms-2"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+
+        </div>
+        </div>
+        <div class="row top2 text-center py-3">
+            <div class="col-sm-3 fw-bold fs-2">
+                <i class="fa-solid fa-cart-shopping text-mycolor"></i>
+                Shop<span class="text-mycolor">Ease</span>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <span class="input-group-text h">
+                        All Categories
+                    </span>
+                    <input type="text" class="form-control h" placeholder="search for products.."/>
+                    <span class="input-group-text bg-mycolor h text-light">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-3 fw-bold">
+                <i class="fa-regular fa-user fs-4"></i>
+                Login/Register
+                <span class="ms-3 ps-3 border-start ">
+                    <i class="fa-solid fa-cart-flatbed"></i> Cart
+                </span>
+            </div>
+        </div>
+        <div class="row menu">
+            <!-- start menu -->
+             <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" style="color:black !important;">Fruits</a></li>
+            <li><a class="dropdown-item" href="#" style="color:black !important;">Grocery</a></li>
+            <li><a class="dropdown-item" href="#" style="color:black !important;">Vegetables</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Deals</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Register</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Support</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+            <!-- end menu -->
+        </div>
+        <div class="row slider">
+            <div class="col-sm-12 p-0">
+                <!-- start slider-->
+                 <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="images/s.png" style="max-height:450px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="images/s.png" style="max-height:450px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/s.png" style="max-height:450px;" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                <!-- end slider-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-truck fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Free Shipping</b><br/>
+            On order above 999/-</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-truck fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Free Shipping</b><br/>
+            On order above 999/-</p>
+       
+      </div>
+    </div>
+  </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">
+      <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-truck fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Free Shipping</b><br/>
+            On order above 999/-</p>
+       
+      </div>
+    </div>
+  </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-12 fw-bold">
+                        <p>
+                            Top Categories
+         <a href="#" class="float-end text-decoration-none link-dark">View All </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/s1.png" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>  
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                        <img src="images/s2.png" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                        <img src="images/s3.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                        <img src="images/s4.png" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                        <img src="images/s5.png" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                        <img src="images/s6.png" class="card-img-top"/>
+                        <div class="card-body text-center">
+                            <b>Sample Text</b>
+                            <b class="text-mycolor">Shop Now <i class="fa-solid fa-arrow-right-long"></i></b>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                </div>
+            </div>
+        </div>
+
+        <!--Products Category start-->
+     
+        <div class="row">
+
+
+
+
+
+             <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-12 fw-bold">
+                        <p>
+                            Popular Products
+         <a href="#" class="float-end text-decoration-none link-dark">View All </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card shadow-lg border-0">
+                        <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s7.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body">
+                            <b class="text-center">Noise ColorFit Pro 4</b>
+                            <b class="text-center">Smart Watch</b><br>
+                            <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                          
+                        </div>
+                    </div>  
+                 </div>
+                <!-- end category--> 
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                          <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s8.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                           
+
+                            <b>Noise ColorFit Pro 4</b>
+                            <b class="">Smart Watch</b>
+                             <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                            
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                          <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s9.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                           
+
+                            <b>Noise ColorFit Pro 4</b>
+                            <b class="">Smart Watch</b>
+                             <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                          <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s10.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                           
+                            <b>Noise ColorFit Pro 4</b>
+                            <b class="">Smart Watch</b>
+                             <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                          <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s11.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                           
+
+                            <b>Noise ColorFit Pro 4</b>
+                            <b class="">Smart Watch</b>
+                             <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                 <!-- start category-->
+                 <div class="col-sm-2">
+                    <div class="card">
+                          <div class="w-25 bg-mycolor ms-2 mt-2 text-light text-center" style="height:32px; width:60px !important; border:1px solid black">23%off</div>
+                        <img src="images/s12.png" class="card-img-top" style="height:180px;"/>
+                        <div class="card-body text-center">
+                          
+                            <b>Noise ColorFit Pro 4</b>
+                            <b class="">Smart Watch</b>
+                             <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star"></i>(120)
+                            </span>
+                            <span class="mt-2 d-block fw-bold fs-5"><i class="fa-solid fa-indian-rupee-sign"></i>1,999
+                                  <s class="fs-5 bg-secodary ms-2" style="color:gray; font-size:19px !important;"><i class="fa-solid fa-indian-rupee-sign"></i>2,400</s>
+                            </span>
+                            <span>
+                                <button class="bg-mycolor mt-2 text-light fw-bold" style="width:150px; height:50px;"><i class="fa-regular fa-truck"></i>Add To cart</button>
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                <!-- end category-->
+                </div>
+            </div>
+            
+        </div>
+
+
+           <!--Products Category end-->
+
+           <!--new category stART-->
+         
+
+        <div class="row">
+            <DIV class="col-sm-10 mx-auto">
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                   <div class="card mb-3" style="max-width:650px; background: #e9f1fe;">
+  <div class="row g-0">
+    
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title text-primary">Electronics Sale</h5>
+        <p class="card-text fs-2 fw-bold">Upgrade Your
+            <br>Tech Game<br>
+            Up to <span class="text-primary">40%</span>off
+         </p>
+       <button class="text-light w-50 p-2" style="background: #1f4ea3; width:200px !important;">Shop Electronics <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="images/s13.png" class="img-fluid rounded-start" alt="..." style="height:200px; width:700px !important;">
+    </div>
+  </div>
+</div>
+</div>
+                    <div class="col-sm-6">
+
+                         <div class="card mb-3" style="max-width: 650px; background:#ebf5ea;">
+  <div class="row g-0">
+    
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title text-success">Electronics Sale</h5>
+        <p class="card-text fs-2 fw-bold">Upgrade Your
+            <br>Tech Game<br>
+            Up to <span class="text-success">40%</span>off
+         </p>
+       <button class="text-light w-50 p-2" style="background:green; width:200px !important;">Shop Electronics <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="images/s14.png" class="img-fluid rounded-start" alt="..." style="height:200px; width:800px !important; background-size:cover;">
+    </div>
+  </div>
+</div>
+                    </div>
+                </div>
+            </DIV>
+        </div>
+
+          <!--new category END-->
+
+
+          <div class="row">
+            <div class="col-sm-10 mx-auto fw-bold text-center fs-5 mt-3 mb-3">
+                Trusted by 10,000+ Customers
+            </div>
+          </div>
+
+
+          <!--bottom category start-->
+
+        <div class="row">
+
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-truck fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Order Prices</b><br/>
+            Best Prices Every Day</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-timeline fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Early Returns</b><br/>
+            Hustle Free Returns</p>
+       
+      </div>
+    </div>
+  </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+      <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+    <i class="fa-solid fa-square-check fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>100% original</b><br/>
+            Original Products</p>
+       
+      </div>
+    </div>
+  </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+      <div class="card my-3 border-0 shadow-lg">
+  <div class="row g-0">
+    <div class="col-md-4 text-center pt-4">
+      <i class="fa-solid fa-truck fs-2"></i>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">
+            <b>Secure Shopping</b><br/>
+            Your Data is safe</p>
+       
+      </div>
+    </div>
+  </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!--bottom category end-->
+
+          <!--last category start-->
+         
+          
+
+
+        <div class="row mt-3">
+            <div class="col-sm-10 mx-auto">
+                <div class="row" style="background:#fff6ef;">
+                    <div class="col-sm-6 ms-3 fs-3 p-4">
+                        <button class="rounded bg-mycolor text-light border-0" style="border-radius:100% !important;">
+                        <i class="fa-solid fa-envelope fs-3"></i></button>
+                         <b class="fw-bold">Subscribe to our Newsletter</b>
+                         <p style="font-size:15px !important;" class="ms-4 d-block">Get the latest updates on new products and upcoming sales</p>
+                    </div> 
+                    <div class="col-sm-5 p-4 mt-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email...">
+                            <button class="input-group-text bg-mycolor text-light fw-bold">Subscribe</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         <!--last category end-->
+
+         <!--footer start-->
+        
+        <div class="row">
+            <div class="col-sm-10 mx-auto">
+                <div class="row mt-4 bg-light shadow-lg">
+                    <div class="col-sm-3 fs-2">
+                         <i class="fa-solid fa-cart-shopping text-mycolor fs-1"></i>
+                         Shop<span class="text-mycolor fw-bold fs-1">Ease</span><br>
+                         <span style="font-size:15px !important;">You can shop destination for</span>
+                         <p style="font-size:15px !important;">shopping the latest trends in <br>Fashion,electronics and more</p>
+                         <span class="ps-3">
+                            <i class="fa-brands fa-facebook-f" style="font-size:20px !important;"></i>
+                            <i class="fa-brands fa-instagram ms-3" style="font-size:20px !important;"></i>
+                            <i class="fa-brands fa-twitter ms-3" style="font-size:20px !important;"></i>
+                            <i class="fa-brands fa-youtube ms-3" style="font-size:20px !important;"></i>
+                         </span>
+                         
+                    </div>
+                    <div class="col-sm-2 mt-3">
+                        <div class="navbar">
+                            <ul>
+                                <li class="fw-bold"><a>Quick Links</a></li>
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>Categories</a></li>
+                                <li><a>Deals</a></li>
+                                <li><a>About us</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 mt-3">
+                        <div class="navbar">
+                            <ul>
+                                <li class="fw-bold"><a>Customer Services</a></li>
+                                <li><a>My offers</a></li>
+                                <li><a>Returns and Refunds</a></li>
+                                <li><a>Shopping policies</a></li>
+                                <li><a>Privacy</a></li>
+                                <li><a>Terms and condition</a></li>
+                                <li><a>FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 mt-3 ms-3">
+                        <div class="navbar">
+                            <ul>
+                                <li class="fw-bold"><a>My account</a></li>
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>Categories</a></li>
+                                <li><a>Deals</a></li>
+                                <li><a>About us</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5 class="mt-4 fw-bold">Contact us</h5>
+                         <p>123,Hazratganj <br>lucknow ,UP-2256001</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+         <!--footer end-->
+        <div class="row"></div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
